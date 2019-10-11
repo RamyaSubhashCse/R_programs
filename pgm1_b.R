@@ -1,10 +1,11 @@
-path="/home/hduser/Documents"
-setwd(path)
-Student1=read.delim("/home/hduser/Documents/Student1.csv")
-Student1
-val_new=vector(mode="numeric",length=length(Student1$sl_no))
-Student1$Sl_no<-seq.int(nrow(Student1))
-write.table(Student1,file="file2.csv",sep="\t",row.names=FALSE)
+path="/home/hduser/Desktop/"
+        setwd(path)  
+        Stud1=read.delim("Student.csv")
+        Stud1
+        val_new=vector(mode="numeric",length =length(Stud1$CGPA))
+        Stud1$num<-seq.int(nrow(Stud1))
+        write.table(Stud1$num,file="file11.csv", sep= "\t", row.names=FALSE)
+      
 
 
 
